@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    /* background-color: #12d46a; */
+    background-color: #e9ffc5;
+    height: 100vh;
+}
+
+li {
+
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font: 1rem;
+}
+
+a:hover {
+    color: #ffd476;
+}
+
+
+.item-cont{
+    
+    border-style: solid;
+    background: rgba(231, 231, 231, 0.4);
+    border: 1px solid rgba(34, 34, 34, 0.4);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    margin: 5px 20px;
+}
+
+
+
+
+.header {
+    position: fixed;
+    padding: 0 2rem;
+    background-image: linear-gradient(#027058 10%, #009473 50%,#12d46a);
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.navbar {
+    width: 100%;
+    height: 90px;
+    max-width: 1980px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.navbar .logo-img {
+    height: 90px;
+    width: auto;
+    padding-bottom: 0%;
+    padding-top: -10%;
+    margin-left: 1%;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 8rem;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ededed;
+}
+
+.navbar .links
+li a  {
+    transition: 0.3s;
+}
+
+.navbar .toggle_btn {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 85px;
+    height: 0;
+    width: 300px;
+    background: rgba(231, 231, 231, 0.1);
+    /* border: 1px solid rgba(34, 34, 34, 0.1); */
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transform: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: 0.2s ease-in-out;
+}
+
+.dropdown_menu.open {
+    height: 146px;
+    transition: 0.2s ease-in-out;
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(34, 34, 34, 0.1);
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1200px;
+    max-height: 60%;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+.mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #009473;
+    font-weight: bold;
+    font-size: 22px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 3px;
+    width: 40px;
+    margin: 0 2px;
+    background-color: #bbb;
+
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+.active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+
+
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+@media(max-width:992px) {
+    .navbar .links {
+        display: none;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+
+    .item-cont {
+        margin: 5px 20px;
+    }
+}
