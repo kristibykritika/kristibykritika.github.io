@@ -47,5 +47,5 @@ BuyBtn.onclick = function () {
 
     
    
- window.open(`https://wa.me/7585918846/?text=${message}`, "_blank");
+ window.open(`https://wa.me/6297350047/?text=${message}`, "_blank");
 }

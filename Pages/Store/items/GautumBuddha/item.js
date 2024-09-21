@@ -45,5 +45,5 @@ BuyBtn.onclick = function () {
 
     message = `Order%20From%20Web%0D%0A${ProdName}%20-%20${ProdSize}%0D%0AFixture%20-%20${fixture}`
 
-    window.open(`https://wa.me/7585918846/?text=${message}`, "_blank");
+    window.open(`https://wa.me/6297350047/?text=${message}`, "_blank");
 }
