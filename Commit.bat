@@ -7,4 +7,6 @@ git add --all
 git commit -m "%input%"
 git push
 
+PAUSE
+
 
